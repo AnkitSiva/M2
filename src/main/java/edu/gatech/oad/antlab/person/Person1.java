@@ -34,7 +34,7 @@ public class Person1 {
     */
 
     private String calc(String input) {
-        if (input == NULL) {
+        if (input == null) {
             throw new IllegalArgumentException("Input was NULL");
         }
 
@@ -43,10 +43,10 @@ public class Person1 {
             return input;
         }
 
-        String output = new String(input);
+        String output = new String();
 
         for (int i = input.length() - 1; i > -1; i++) {
-            ouput[(((i - 2) % input.length()) + input.length()) % input.length()] = input[i];
+                output += input.charAt((i + 2) % input.length());
         }
         
         return output;
