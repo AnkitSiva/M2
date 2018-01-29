@@ -45,7 +45,7 @@ public class Person1 {
 
         String output = new String();
 
-        for (int i = input.length() - 1; i > -1; i--) {
+        for (int i = 0; i < input.length(); i++) {
                 output += input.charAt((i + 2) % input.length());
         }
         
@@ -62,7 +62,7 @@ public class Person1 {
     */
 
     public String toString(String input) {
-        return name + calc(input);
+        return '\n' + name + calc(input);
     }
 
 }
