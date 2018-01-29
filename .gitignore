@@ -33,3 +33,6 @@ proguard/
 .gradle/
 build/
 bin/
+
+#Vim Swap Files
+.*.swp
