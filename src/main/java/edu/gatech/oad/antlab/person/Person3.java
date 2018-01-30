@@ -43,10 +43,10 @@ public class Person3 {
 	 */
 	private String calc(String input) {
 	  //Person 3 put your implementation here
-	 	String new = "";
+	 	String newStr = "";
 	 	for (int i = input.length() - 1; i >= 0; i--) {
-	 		new += input.charAt(i);
+	 		newStr += input.charAt(i);
 	 	}
-	  return new;
+	  return newStr;
 	}
 }
