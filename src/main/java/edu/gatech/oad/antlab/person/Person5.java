@@ -34,6 +34,7 @@ public class Person5 {
       if (input == null) {
           throw new IllegalArgumentException("input was null");
       }
+      int size = input.length();
       if (size == 0 || size == 1) {
           return input;
       }
